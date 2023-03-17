@@ -10,9 +10,9 @@ const counter = {
   },
 };
 
-const decrementBtn = document.querySelector(".js-decrement");
+      const decrementBtn = document.querySelector(".js-decrement");
 const incrementBtn = document.querySelector(".js-increment");
-const valueEl = document.querySelector(".js-value");
+  const valueEl = document.querySelector(".js-value");
 
 console.log(decrementBtn);
 console.log(incrementBtn);

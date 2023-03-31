@@ -1,24 +1,31 @@
 // // /////////////////// Task 10  //////////////////////////////////////
 
-class Storage {
-  constructor(items = []) {
-    this.items = items;
-  }
-  getItems() {
-    return this.items;
-  }
-  addItem(newItem) {
-    this.items.push(newItem);
-  }
-  removeItem(itemToRemove) {
-    this.items = this.items.filter((item) => item !== itemToRemove);
-  }
-}
+// class Storage {
+//   constructor(items = []) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//     this.items = this.items.filter((item) => item !== itemToRemove);
+//   }
+// }
 
-// Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+let audi = { wheels: 4 };
+let tesla = audi;
+
+delete audi.wheels;
+
+console.log(audi.wheels, tesla.wheels);
